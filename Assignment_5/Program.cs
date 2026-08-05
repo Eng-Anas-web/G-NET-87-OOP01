@@ -22,16 +22,27 @@ namespace Assignment_5
 
             #region Question02
             //2-
-                //a) Identify at least three problems with this design from an encapsulation perspective.
-                //A: -The fields are public, which breaks encapsulation.
-                //   -There is no validation for the data.
-                //   -The struct does not use properties to control access to its data.
+            //a) Identify at least three problems with this design from an encapsulation perspective.
+            //A: -The fields are public, which breaks encapsulation.
+            //   -There is no validation for the data.
+            //   -The struct does not use properties to control access to its data.
 
-                //b) How can private fields and public properties improve this design?
-                  //A: -Private fields hide the data from direct access.
-                  //   -Public properties control access to the data.
-                  //   -Properties can validate values before storing them.
+            //b) How can private fields and public properties improve this design?
+            //A: -Private fields hide the data from direct access.
+            //   -Public properties control access to the data.
+            //   -Properties can validate values before storing them.
             #endregion
+
+            #region Question03 
+            //3-
+            //DeliveryAddress address01 = new DeliveryAddress("Alex" , "Smooha" , 5);
+            //DeliveryAddress address02 = address01;
+            //address02.City = "Cairo";
+            //address02.Street = "Nasr";
+            //address02.BuildNumber = 2;
+            //Console.WriteLine(address01.GetFullAddress());
+            //Console.WriteLine(address02.GetFullAddress());
+            #endregion
+        }
     }
-}
 }
